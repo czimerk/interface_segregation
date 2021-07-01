@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace HomeAirCond.Products
+namespace HomeAirCond.Interfaces
 {
     public interface ILedAirCond
     {
