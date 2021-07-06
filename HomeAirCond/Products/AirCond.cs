@@ -28,5 +28,16 @@ namespace HomeAirCond.Products
         {
             _temperature = newTemperature;
         }
+
+        //ROSSZ DESIGN
+        //public bool ConnectWifi(string ssid, string password)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //public WifiResponse ReceiveControlMessage(float temperature, DeviceState state)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

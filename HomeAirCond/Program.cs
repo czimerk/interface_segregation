@@ -16,10 +16,14 @@ namespace HomeAirCond
             //2., Wifis-Bluetooth-os klíma
             IWBAirCond ac = new WBAirCond();
             //többértelmű hívás. A fordító nem tudja eldönteni, melyiket hívja
-            //var bResponse = ac.ReceiveControlMessage(22.0f, DeviceState.On);
+            //BluetoothResponse aResponse = ac.ReceiveControlMessage(22.0f, DeviceState.On);
             
-            BluetoothResponse bResponse = (ac as IBluetoothAirCond).ReceiveControlMessage(22.0f, DeviceState.On);
-            WifiResponse wResponse = (ac as IWifiAirCond).ReceiveControlMessage(22.0f, DeviceState.On);
+            BluetoothResponse bResponse = (ac as IBluetoothAirCond)
+                .ReceiveControlMessage(22.0f, DeviceState.On);
+            
+            
+            WifiResponse wResponse = (ac as IWifiAirCond)
+                .ReceiveControlMessage(22.0f, DeviceState.On);
 
             //3., Led klíma, aminek nem kell feltétlen wifi-snek vagy bluetoothosnak lennie
             ILedAirCond ledAc = new LedAirCond();
