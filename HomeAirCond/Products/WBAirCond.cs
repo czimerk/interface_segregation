@@ -14,7 +14,12 @@ namespace HomeAirCond.Products
 
         //nem jó interface implementáció, mert elfedi az ősosztály metódusát
         //public BluetoothResponse ReceiveControlMessage(float temperature, DeviceState state)
-
+        //{
+        //    SetState(state);
+        //    SetTemperature(temperature);
+        //    //...
+        //    return new BluetoothResponse();
+        //}
         BluetoothResponse IBluetoothAirCond.ReceiveControlMessage(float temperature, DeviceState state)
         {
             SetState(state);

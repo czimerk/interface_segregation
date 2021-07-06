@@ -5,7 +5,7 @@ using System.Text;
 
 namespace HomeAirCond.Products
 {
-    //Air conditioner with wifi
+    //Wifi-s klíma
     public class WAirCond : AirCond, IWifiAirCond
     {
         public bool ConnectWifi(string ssid, string password)
